@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const shoesModel = require('./models');
+const { shoesModel }= require('./models');
 const bearerAuth = require ('./auth/middleware/bearer');
 const permissions = require('./auth/middleware/acl');
 
@@ -36,7 +36,7 @@ async function handleCreate(req, res, next) {
   try {
     let data = req.body;
     let newRecord = await shoesModel.create(data);
-    res.status(200).json(newRecord);
+    res.status(201).json(newRecord);
   } catch(e) {
     next(e);
   }
