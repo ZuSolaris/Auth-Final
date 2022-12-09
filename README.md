@@ -7,7 +7,7 @@
 ### Problem Domain: This application was created in order to help me understand CRUD and SQL database management. This expands off yesterday's lab by employing class characteristic off of CRUD capabilities from the two created routes. It also introduces SQL relations.
 
 
-
+..
 GitHub Actions: 
 
 Production Deployment: https://omg-shoes.onrender.com/
