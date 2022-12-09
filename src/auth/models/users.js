@@ -8,7 +8,7 @@ const userModel = (sequelize, DataTypes) => {
   const model = sequelize.define('Users', {
     username: {type: DataTypes.STRING, required: true, unique: true },
     password: {type: DataTypes.STRING, required: true },
-    role: { type: DataTypes.ENUM('manager', 'employee', 'customer'), required: true, defaultValue: 'user'},
+    role: { type: DataTypes.ENUM('manager', 'employee', 'customer'), required: true, defaultValue: 'customer'},
     token: {
       type: DataTypes.VIRTUAL,
       get() {
