@@ -2,23 +2,25 @@
 
 ## Project: Auth Final
 
-## Author: Zoe Gonzalez
+## Author: Kenny W. Lino, Seth P. Pierce, and Zoe U. Gonzalez
 
-### Problem Domain: This application was created in order to help me understand CRUD and SQL database management. This expands off yesterday's lab by employing class characteristic off of CRUD capabilities from the two created routes. It also introduces SQL relations.
+### Problem Domain: 
 
+This application is a culmination of all material learned throughout the last 2 weeks. It combines CRUD, routing, and authentication services. It also has compatibaility with SQL databases and moreso specifically postgres14, this project features authentication services and user role distributions. There is an embedded sample, and all of the text neccessary to run the program below.
 
-..
-GitHub Actions: 
+GitHub Actions: https://github.com/ZuSolaris/Auth-Final/actions
 
 Production Deployment: https://omg-shoes.onrender.com/
 
 ### Setup
 
+
+
 #### env requirements
 
 see `.env.sample`
 
-PORT: 3001 
+PORT: 3001
 
 DATABASE_URL=postgres://localhost:5432/Auth-Final
 
@@ -38,19 +40,21 @@ DATABASE_URL=postgres://localhost:5432/Auth-Final
 
 ## Features / Routes
 
+
 / : automatically redirects you to the page.
 
-/bad: Sends you to an error page.
+/shoes all shoes
 
-/item: Sends you to a general item directory with the selected name. 
+/shoes:id individual shoe association
 
-/item:id : Sends you to a general item directory with the selected and associated id. 
+/signin: allows user to sign into existing account
 
-/download: Sends you to a general download directory with the selected name. 
+/signup: allows user to create an account
 
-/download:id : Sends you to a general item directory with the selected and associated id. 
+/users: lists users
+
 
 /* : If the page is not available then an error flag is thrown.
 
 
-![Workflow]()
+![Workflow](./assets/images/workflow.png)
